@@ -64,8 +64,32 @@ button:hover {
 }
 
 .hero-img img:hover {
-  box-shadow: 3px 7px 20px 2px rgba(0, 0, 0, 0.63);
-  -webkit-box-shadow: 3px 7px 20px 2px rgba(0, 0, 0, 0.63);
-  -moz-box-shadow: 3px 7px 20px 2px rgba(0, 0, 0, 0.63);
   transform: scale(1.02);
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    overflow-x: hidden;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+    padding-top: 90px;
+    z-index: 0;
+  }
+
+  .hero-img img {
+    width: 200px;
+  }
+
+  .hero-text {
+    position: relative;
+    text-align: center;
+    top: -120px;
+    font-size: 15px;
+  }
+
+  .hero-text h1 {
+    font-size: 25px;
+  }
 }

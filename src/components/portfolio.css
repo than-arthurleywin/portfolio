@@ -75,7 +75,6 @@
   position: relative;
 }
 
-
 .isi {
   display: none;
   position: absolute;
@@ -110,7 +109,8 @@
 }
 
 .cards-2 {
-  background-image: url("https://via.placeholder.com/300x200/FFC300/FFFFFF?text=Image+2");
+  background-image: url("./img/tebak.png");
+  background-size: cover;
 }
 
 .cards-3 {
@@ -132,6 +132,11 @@
 
 .cardsi-2 {
   background-image: url("./img/kalkulatorimt.png");
+  background-size: cover;
+}
+
+.cardsi-3 {
+  background-image: url("./img/cuisine.png");
   background-size: cover;
 }
 

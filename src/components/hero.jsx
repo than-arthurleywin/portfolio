@@ -2,6 +2,13 @@ import "./hero.css";
 import heroImg from "./img/hero.png";
 
 function Hero() {
+  const scrollToContact = () => {
+    const contact = document.querySelector("#contact");
+    if (contact) {
+      contact.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="hero">
       <div className="hero-text">
@@ -10,7 +17,7 @@ function Hero() {
         <br />
         <span>A web development and student from SMKN 1 BANJAR</span>
         <br />
-        <button>Hire Me</button>
+        <button onClick={scrollToContact}>Contact Me</button>
       </div>
       <div className="hero-img">
         <img src={heroImg} alt="" />

@@ -12,7 +12,6 @@ function App() {
       <Navbar />
       <Hero />
       <About />
-      <Service />
       <Portfolio />
       <Contact />
       <footer>&copy; Fathir Ramdan Maulani</footer>

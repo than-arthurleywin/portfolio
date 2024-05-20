@@ -49,6 +49,7 @@
   background-color: #153448;
   margin: 20px;
   padding: 20px;
+  text-align: center;
 }
 
 .card div img {
@@ -67,4 +68,35 @@ svg {
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .service {
+    flex-direction: column;
+    padding: 20px;
+    height: auto;
+  }
+
+  .card {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .card div {
+    margin: 10px 0;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .service-text h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  svg {
+    width: 80px;
+    padding: 15px;
+    margin: 10px 0;
+  }
 }

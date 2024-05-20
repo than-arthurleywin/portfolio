@@ -1,9 +1,8 @@
 import "./service.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Service() {
   return (
-    <div className="service">
+    <div id="service" className="service">
       <div className="service-text">
         <h1>Service</h1>
         <div className="card">

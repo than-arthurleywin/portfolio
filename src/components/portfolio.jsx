@@ -32,10 +32,8 @@ function Portfolio() {
   const openGamePage = (cardNumber) => {
     const gameUrls = [
       "https://than-arthurleywin.github.io/KertasGuntingBatu/",
-      "https://game2.com",
+      "https://than-arthurleywin.github.io/gametebak/",
       "https://game3.com",
-      "https://game4.com",
-      "https://game5.com",
     ];
     window.open(gameUrls[cardNumber - 1], "_blank");
   };
@@ -44,42 +42,26 @@ function Portfolio() {
     const projectUrls = [
       "https://safenet-insights.vercel.app/",
       "https://than-arthurleywin.github.io/indeksmasatubuh/",
-      "https://project3.com",
+      "https://fthrrmdnmln.000webhostapp.com/index.html",
       "https://project4.com",
     ];
     window.open(projectUrls[cardNumber - 1], "_blank");
   };
 
   const openUIUXPage = (cardNumber) => {
-    const uiuxUrls = [
-      "https://uiux1.com",
-      "https://uiux2.com",
-      "https://uiux3.com",
-      "https://uiux4.com",
-    ];
+    const uiuxUrls = ["https://uiux1.com", "https://uiux2.com", "https"];
     window.open(uiuxUrls[cardNumber - 1], "_blank");
   };
 
   const getCardTitle = (cardNumber) => {
-    const gameTitles = [
-      "Kertas Gunting Batu",
-      "Snake Game",
-      "Memory Match",
-      "Space Invaders",
-      "Sudoku",
-    ];
+    const gameTitles = ["Kertas Gunting Batu", "Tebak Angka", "Coming Soon"];
     const projectTitles = [
       "Pemberdayaan Perempuan",
       "Indeks Masa Tubuh",
-      "Mini Project 3",
-      "Mini Project 4",
+      "Cuisine",
+      "Coming Soon",
     ];
-    const uiuxTitles = [
-      "UI/UX Design 1",
-      "UI/UX Design 2",
-      "UI/UX Design 3",
-      "UI/UX Design 4",
-    ];
+    const uiuxTitles = ["UI/UX Design 1", "UI/UX Design 2", "Coming Soon"];
     if (showMiniGames) return gameTitles[cardNumber - 1];
     else if (showMiniProject) return projectTitles[cardNumber - 1];
     else return uiuxTitles[cardNumber - 1];
@@ -117,7 +99,7 @@ function Portfolio() {
           {showMiniGames && (
             <div className="portfolio-mini-games">
               <div className="cards-container">
-                {[1, 2, 3, 4, 5].map((cardNumber) => (
+                {[1, 2, 3].map((cardNumber) => (
                   <div
                     key={cardNumber}
                     className={`cards cards-${cardNumber}`}
@@ -171,7 +153,7 @@ function Portfolio() {
           {showUIUX && (
             <div className="portfolio-uiux">
               <div className="cards-container">
-                {[1, 2, 3, 4].map((cardNumber) => (
+                {[1, 2, 3].map((cardNumber) => (
                   <div
                     key={cardNumber}
                     className={`cards cardsu-${cardNumber}`}
